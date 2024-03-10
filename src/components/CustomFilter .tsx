@@ -28,7 +28,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
       >
         <div className="relative w-fit z-10">
           <Listbox.Button className="custom-filter__btn">
-            <span className="block truncate">{selected.title}</span>
+            <span className="block ">{selected.title}</span>
             <Image
               src="/chevron-up-down.svg"
               width={20}
@@ -54,7 +54,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
                 px-4 ${active ? "bg-slate-800 text-white " : "text-gray-900"}`}
                 >
                   {({ selected }) => (
-                    <span className="block truncate">{option.title}</span>
+                    <span className="block ">{option.title}</span>
                   )}
                 </Listbox.Option>
               ))}

@@ -15,13 +15,7 @@ const Footer = () => {
         justify-between gap-5 sm:px-16 px-6 py-10"
       >
         <div className="flex flex-col justify-start items-start gap-6">
-          <Image
-            src="/logo.svg"
-            alt="logo"
-            width={118}
-            height={18}
-            className="object-contain"
-          />
+        <h1 className="font-semibold text-2xl">Perfect-Rent</h1>
           <p className="text-base text-gray-700"></p>
         </div>
         <div className="footer__links">
@@ -46,7 +40,7 @@ const Footer = () => {
         className="flex justify-between items-center flex-wrap
          mt-10 border-t border-gray-100 sm:px px-6 py-10"
       >
-        <p> Rent Car 2023 All rights reserved &copy;</p>
+        <p> Rent Car 2024 All rights reserved &copy;</p>
         <div className="footer__copyrights-link">
                 <Link href="/" className="text-gray-500">
                     Privacy Policy

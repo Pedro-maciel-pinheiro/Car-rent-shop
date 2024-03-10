@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 
 import CustomButton from "@/components/CustomButton";
 
@@ -12,19 +12,13 @@ const Navbar = () => {
       sm:px-16 px-6 py-4"
       >
         <Link href={"/"} className="flex justify-center items-center">
-          <Image
-            src="/logo.svg"
-            alt="car"
-            width={118}
-            height={18}
-            className="object-contain"
-          />
+         <h1 className="font-semibold text-2xl">Perfect-Rent</h1>
         </Link>
         <CustomButton
           title={"Sign In"}
           btnType="button"
           containerStyles={
-            "text-primary-blue rounded-full bg-white min-w-[130px] "
+            "text-slate-900 rounded-xl bg-white min-w-[130px] "
           }
         />
       </nav>

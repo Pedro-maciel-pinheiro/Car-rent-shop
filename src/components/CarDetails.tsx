@@ -35,7 +35,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
             >
               <Transition.Child
                 as={Fragment}
-                enter="ease-out duration-500"
+                enter="ease-out duration-300"
                 enterFrom="opacity-0 scale-50"
                 enterTo="opacity-100 scale-100"
                 leave="ease-in duration-300"
@@ -66,8 +66,8 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                   </button>
                   <div className="flex-1 flex-col gap-3">
                     <div
-                      className="relative w-full h-40 
-                        bg-pattern bg-cover bg-center rounded-xl
+                      className="relative w-full h-72 
+                        bg-slate-700 bg-cover bg-center rounded-xl mb-2
                         "
                     >
                       <Image
@@ -81,7 +81,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                     <div className="flex gap-3">
                       <div
                         className="flex-1 relative w-full
-                       h-24 rounded-xl bg-slate-100
+                       h-24 rounded-xl bg-slate-200
                       "
                       >
                         <Image
@@ -94,7 +94,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       </div>
                       <div
                         className="flex-1 relative w-full
-                       h-24 rounded-xl bg-slate-100
+                       h-24 rounded-xl bg-slate-200
                       "
                       >
                         <Image
@@ -107,7 +107,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       </div>
                       <div
                         className="flex-1 relative w-full
-                       h-24 rounded-xl bg-slate-100
+                       h-24 rounded-xl bg-slate-200
                       "
                       >
                         <Image

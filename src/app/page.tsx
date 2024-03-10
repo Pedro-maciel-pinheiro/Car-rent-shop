@@ -8,7 +8,7 @@ export default async function Home({ searchParams }: HomeProps) {
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2022,
     fuel: searchParams.fuel || "",
-    limit: searchParams.limit || 5,
+    limit: searchParams.limit || 8,
     model: searchParams.model || "",
   });
 
@@ -42,8 +42,8 @@ export default async function Home({ searchParams }: HomeProps) {
             </div>
 
             <ShowMore
-              pageNumber={(searchParams.limit || 5) / 5}
-              isNext={(searchParams.limit || 10) > allCars.length}
+              pageNumber={(searchParams.limit || 8) / 4}
+              isNext={(searchParams.limit || 4) > allCars.length}
             />
           </section>
         ) : (

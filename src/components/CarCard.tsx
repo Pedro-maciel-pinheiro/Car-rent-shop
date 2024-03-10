@@ -18,9 +18,9 @@ const CarCard = ({ car }: CarCardProps) => {
   const carRent = calculateCarRent(city_mpg, year);
 
   return (
-    <div className="car-card gruop">
+    <div className="car-card gruop" >
       <div className="car-card__content">
-        <h2 className="car-card__content-title">
+        <h2 className="car-card__content-title" >
           {make} {model}
         </h2>
       </div>
@@ -39,7 +39,7 @@ const CarCard = ({ car }: CarCardProps) => {
           /day
         </span>
       </p>
-      <div className="relative w-96 h-40 my-3 object-contain">
+      <div className="relative w-96 h-40 my-3 object-contain" >
         <Image src={generateCarImageUrl(car,'1')} fill priority className="object-contain" alt="" />
       </div>
       <div className="relative flex w-full mt-2 ">
@@ -72,7 +72,7 @@ const CarCard = ({ car }: CarCardProps) => {
         </div>
       </div>
 
-      <div className="w-full">
+      <div className="w-full" >
         <CustomButton
           title="View more"
           containerStyles="w-full py-[16px]
